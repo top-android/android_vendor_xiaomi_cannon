@@ -5,6 +5,10 @@ service camerahalserver /vendor/bin/hw/camerahalserver
     ioprio rt 4
     capabilities SYS_NICE
     task_profiles CameraServiceCapacity MaxPerformance
+    # Let the OOM killer target camerahalserver (which leaks memory) instead of
+    # system_server, so a low-memory situation restarts the camera HAL rather
+    # than panicking the whole device.
+    oom_score_adj 900
 
 on boot
     chmod 0666 /sys/kernel/fpsgo/common/force_onoff
