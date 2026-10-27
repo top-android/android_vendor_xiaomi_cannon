@@ -140,6 +140,21 @@ dex_import {
 	jars: ["proprietary/system/framework/mediatek-ims-extension-plugin.jar"],
 }
 
+// 2026-10-27 IMS：这两个 jar 原来漏了，导致 com.mediatek.ims 的 uses-library
+// （com.mediatek.ims.legacy / com.mediatek.wfo.legacy）挂不上，IMS 服务起不来。
+// 均取自原厂 V13.0.3.0.SJECNXM 的 /system/framework/。
+dex_import {
+	name: "mediatek-ims-legacy",
+	owner: "xiaomi",
+	jars: ["proprietary/system/framework/mediatek-ims-legacy.jar"],
+}
+
+dex_import {
+	name: "mediatek-wfo-legacy",
+	owner: "xiaomi",
+	jars: ["proprietary/system/framework/mediatek-wfo-legacy.jar"],
+}
+
 dex_import {
 	name: "mediatek-services",
 	owner: "xiaomi",
@@ -218,6 +233,18 @@ prebuilt_etc_xml {
 	name: "android.hardware.gnss@2.1-service-mediatek",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-mediatek.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+// AIDL GNSS 声明（A12 原厂自带 gnss-default.xml，extract 时漏了）。
+// A14 的 GnssHal::GnssHal() 先 waitForVintfService<IGnssAidl>()，
+// 只认 VINTF 声明；缺这个片段 → isSupported()=false → 系统里根本没有 gps provider。
+prebuilt_etc_xml {
+	name: "gnss-default-manifest",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/gnss-default.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
