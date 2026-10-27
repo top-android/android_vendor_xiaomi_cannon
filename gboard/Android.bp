@@ -1,0 +1,17 @@
+// Gboard 预装：base + 密度 split 已用 APKEditor 合并成单包
+// 放独立 package，避免动 vendor/xiaomi/cannon/Android.bp（那个由 setup-makefiles.sh 生成）
+//
+// presigned + preprocessed：APK 已用 testkey 签好并 zipalign(-p) 过，
+// targetSdk 37 >= 30，soong 要求 preprocessed: true，否则会破坏 v2 签名。
+//
+// enforce_uses_libs: false —— manifest 里声明了 androidx.window.extensions /
+// androidx.window.sidecar 两个运行时才有的 optional uses-library，源码树里没有
+// 对应模块，soong 会把它们过滤掉再比对，必然 mismatch。
+android_app_import {
+    name: "Gboard",
+    apk: "Gboard.apk",
+    presigned: true,
+    preprocessed: true,
+    product_specific: true,
+    enforce_uses_libs: false,
+}
