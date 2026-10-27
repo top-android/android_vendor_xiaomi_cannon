@@ -1413,11 +1413,14 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleRISCV \
     HotwordEnrollmentXGoogleRISCV \
     SoterService \
+    ImsService \
     mediatek-common \
     mediatek-framework \
     mediatek-ims-base \
     mediatek-ims-common \
     mediatek-ims-extension-plugin \
+    mediatek-ims-legacy \
+    mediatek-wfo-legacy \
     mediatek-services \
     mediatek-telecom-common \
     mediatek-telephony-base \
