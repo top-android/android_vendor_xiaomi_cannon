@@ -5,21 +5,14 @@
 soong_namespace {
 }
 
-cc_prebuilt_library_shared {
-	name: "libfmjni",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/system/lib64/libfmjni.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-}
+// cannon(A15): removed the prebuilt blob "libfmjni" (cc_prebuilt_library_shared,
+// compile_multilib "64", prefer:true). It duplicated the in-tree source libfmjni
+// (packages/apps/FMRadio/jni/fmr), forcing Soong to export the blob to Make as
+// "prebuilt_libfmjni"; FMRadio's jni_libs then required "prebuilt_libfmjni:64", which
+// Make rejected as non-existent because a single-arch (64-only) module is not exposed
+// with a ":64" variant alias. The app actually loads the source libfmjni (installed into
+// priv-app/FMRadio/lib/arm64/ and system/lib(64)/), so the blob was unused. Keeping only
+// the source module removes the duplicate-name collision and the bogus required variant.
 
 android_app_import {
 	name: "LocationEM2",
@@ -284,5 +277,50 @@ prebuilt_etc_xml {
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
+}
+
+// A15 fsgen 修复：system_ext/lib 与 system_ext/lib64 下同名 prebuilt .so 不能再走
+// PRODUCT_COPY_FILES —— 落到 lib/lib64 的 COPY_FILES 会被 soong fsgen 的
+// PrebuiltRenderScriptBitcodeFactory 按 arm+arm64 双架构复制，产生 packaging conflict。
+// 改为正规 cc_prebuilt_library_shared（按 arch 分 srcs，装到各自 lib/lib64），
+// 用 stem 保证安装文件名不变（libaudiotoolkit.so / vendor.mediatek.hardware.videotelephony@1.0.so）。
+cc_prebuilt_library_shared {
+	name: "libcannon_audiotoolkit_system_ext",
+	stem: "libaudiotoolkit",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	check_elf_files: false,
+	compile_multilib: "both",
+	system_ext_specific: true,
+	arch: {
+		arm: {
+			srcs: ["proprietary/system_ext/lib/libaudiotoolkit.so"],
+		},
+		arm64: {
+			srcs: ["proprietary/system_ext/lib64/libaudiotoolkit.so"],
+		},
+	},
+}
+
+cc_prebuilt_library_shared {
+	name: "libcannon_videotelephony_system_ext",
+	stem: "vendor.mediatek.hardware.videotelephony@1.0",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	check_elf_files: false,
+	compile_multilib: "both",
+	system_ext_specific: true,
+	arch: {
+		arm: {
+			srcs: ["proprietary/system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so"],
+		},
+		arm64: {
+			srcs: ["proprietary/system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so"],
+		},
+	},
 }
 

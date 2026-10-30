@@ -6,7 +6,10 @@ on post-fs-data
 
 # MTK platform .rc configure
 service md_monitor /vendor/bin/md_monitor
-    interface vendor.mediatek.hardware.mdmonitor@1.0::IMDMonitorService default
+    # A15: vendor.mediatek.hardware.mdmonitor 的 .so 为原厂预编译 blob，树内无 hidl_interface 源码，
+    # host_init_verifier 已知接口集不含它 → 逐文件校验失败。本服务 disabled+oneshot，由
+    # on property:persist.vendor.mdmmonitor=1 显式 start；interface 行仅懒启动注册，注释不影响（cannon A15 适配）。
+    # interface vendor.mediatek.hardware.mdmonitor@1.0::IMDMonitorService default
     class hal
     class main
     user system
