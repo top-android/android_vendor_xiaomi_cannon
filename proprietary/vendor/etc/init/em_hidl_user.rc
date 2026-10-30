@@ -1,8 +1,11 @@
 service emhidl_user /vendor/bin/em_hidl
-    interface vendor.mediatek.hardware.engineermode@1.0::IEmd EmHidlServer
-    interface vendor.mediatek.hardware.engineermode@1.1::IEmd EmHidlServer
-    interface vendor.mediatek.hardware.engineermode@1.2::IEmd EmHidlServer
-    interface vendor.mediatek.hardware.engineermode@1.3::IEmd EmHidlServer
+    # A15: 同 dmc_core.rc —— vendor.mediatek.hardware.engineermode 的 .so 为原厂预编译 blob，
+    # 树内无 hidl_interface 源码，host_init_verifier 已知接口集不含它 → 校验失败。
+    # 本服务 disabled+oneshot 由外部显式 start，interface 行仅为懒启动注册，注释不影响显式启动。
+    # interface vendor.mediatek.hardware.engineermode@1.0::IEmd EmHidlServer
+    # interface vendor.mediatek.hardware.engineermode@1.1::IEmd EmHidlServer
+    # interface vendor.mediatek.hardware.engineermode@1.2::IEmd EmHidlServer
+    # interface vendor.mediatek.hardware.engineermode@1.3::IEmd EmHidlServer
     class hal
     oneshot
     disabled

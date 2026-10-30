@@ -4,9 +4,13 @@ service dmc_core /vendor/bin/dmc_core
     class hal
     user system
     group system
-    interface vendor.mediatek.hardware.dmc@1.0::IDmcService dmc_hidl_service
-    interface vendor.mediatek.hardware.dmc@1.1::IDmcService dmc_hidl_service
-    interface vendor.mediatek.hardware.dmc@1.2::IDmcService dmc_hidl_service
-    interface vendor.mediatek.hardware.apmonitor@2.0::IApmService apm_hidl_service
+    # A15: 这些 MTK HIDL 接口的 .so 是原厂预编译 blob，树内无对应 hidl_interface 源码，
+    # 故 host_init_verifier 的已知接口集(HidlInterfaceMetadata)不含它们 → 逐文件校验失败。
+    # 本服务为 disabled+oneshot，由外部显式 start，interface 行仅用于按需懒启动注册，
+    # 注释掉不影响显式启动（cannon A15 适配）。原声明保留如下备查：
+    # interface vendor.mediatek.hardware.dmc@1.0::IDmcService dmc_hidl_service
+    # interface vendor.mediatek.hardware.dmc@1.1::IDmcService dmc_hidl_service
+    # interface vendor.mediatek.hardware.dmc@1.2::IDmcService dmc_hidl_service
+    # interface vendor.mediatek.hardware.apmonitor@2.0::IApmService apm_hidl_service
     disabled
     oneshot

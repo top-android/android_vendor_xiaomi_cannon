@@ -8,7 +8,9 @@ service camerahalserver /vendor/bin/hw/camerahalserver
     # Let the OOM killer target camerahalserver (which leaks memory) instead of
     # system_server, so a low-memory situation restarts the camera HAL rather
     # than panicking the whole device.
-    oom_score_adj 900
+    # A15: init 已把关键字 oom_score_adj 改名为 oom_score_adjust（system/core/init/
+    # service_parser.cpp:603），旧名被判 Invalid keyword。语义不变，仅改名（cannon A15 适配）。
+    oom_score_adjust 900
 
 on boot
     chmod 0666 /sys/kernel/fpsgo/common/force_onoff
