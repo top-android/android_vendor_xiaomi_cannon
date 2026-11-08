@@ -1530,7 +1530,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/bin/boringssl_self_test64:$(TARGET_COPY_OUT_VENDOR)/bin/boringssl_self_test64 \
     vendor/xiaomi/cannon/proprietary/vendor/bin/dumpsys:$(TARGET_COPY_OUT_VENDOR)/bin/dumpsys \
     vendor/xiaomi/cannon/proprietary/vendor/bin/hw/android.hardware.audio.service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.audio.service \
-    vendor/xiaomi/cannon/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.3-service.xiaomi:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.3-service.xiaomi \
     vendor/xiaomi/cannon/proprietary/vendor/bin/hw/android.hardware.drm-service.clearkey:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm-service.clearkey \
     vendor/xiaomi/cannon/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service \
     vendor/xiaomi/cannon/proprietary/vendor/bin/hw/android.hardware.graphics.composer@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.composer@2.1-service \
@@ -1559,9 +1558,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.audio.common-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.common-V3-ndk.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.audio.effect@6.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.effect@6.0.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.audio.effect@7.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.effect@7.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.fingerprint@2.1.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.biometrics.fingerprint@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.fingerprint@2.2.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.biometrics.fingerprint@2.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.fingerprint@2.3.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.bluetooth@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.bluetooth@1.0.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.bluetooth@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.bluetooth@1.1.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.bluetooth.audio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.bluetooth.audio@2.0.so \
@@ -1923,9 +1919,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/lib/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/power.default.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/hw/vibrator.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vibrator.default.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libalsautils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalsautils.so \
+    vendor/xiaomi/cannon/proprietary/vendor/lib/libbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbase.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libaudioutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioutils.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libavservices_minijail.so:$(TARGET_COPY_OUT_VENDOR)/lib/libavservices_minijail.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbase.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbinder.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libbluetooth_audio_session_aidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_aidl.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libbluetooth_audio_session.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session.so \
