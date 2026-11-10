@@ -59,7 +59,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron \
     vendor/xiaomi/cannon/proprietary/vendor/bin/hw/android.hardware.secure_element@1.0-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.secure_element@1.0-service-mediatek \
     vendor/xiaomi/cannon/proprietary/vendor/bin/hw/android.hardware.thermal@2.0-service.mtk:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.thermal@2.0-service.mtk \
-    vendor/xiaomi/cannon/proprietary/vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.usb@1.2-service-mediatekv2 \
     vendor/xiaomi/cannon/proprietary/vendor/bin/hw/android.hardware.vibrator@1.0-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.vibrator@1.0-service-mediatek \
     vendor/xiaomi/cannon/proprietary/vendor/bin/hw/camerahalserver:$(TARGET_COPY_OUT_VENDOR)/bin/hw/camerahalserver \
     vendor/xiaomi/cannon/proprietary/vendor/bin/hw/mtkfusionrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mtkfusionrild \
@@ -279,7 +278,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/etc/init/android.hardware.keymaster@4.1-service.beanpod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.1-service.beanpod.rc \
     vendor/xiaomi/cannon/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc \
     vendor/xiaomi/cannon/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.mtk.rc \
-    vendor/xiaomi/cannon/proprietary/vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc \
     vendor/xiaomi/cannon/proprietary/vendor/etc/init/android.hardware.vibrator@1.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.vibrator@1.0-service-mediatek.rc \
     vendor/xiaomi/cannon/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/xiaomi/cannon/proprietary/vendor/etc/init/dmc_core.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dmc_core.rc \
@@ -1422,7 +1420,6 @@ PRODUCT_PACKAGES += \
     com.nxp.sems \
     com.android.hotwordenrollment.common.util \
     android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu \
-    android.hardware.usb@1.2-service-mediatekv2 \
     lbs_hidl_service@1.0 \
     manifest_android.hardware.drm@1.4-service.widevine \
     manifest_vendor.xiaomi.hardware.mlipay \
@@ -1660,12 +1657,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.tetheroffload.control@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.tetheroffload.control@1.1.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.thermal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.thermal@1.0.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.thermal@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.thermal@2.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.usb@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.usb@1.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.usb@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.usb@1.1.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.usb@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.usb@1.2.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.usb@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.usb@1.3.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.usb.gadget@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.usb.gadget@1.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.usb.gadget@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.usb.gadget@1.1.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.vibrator@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.vibrator@1.0.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.wifi.common-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.wifi.common-V1-ndk.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.wifi.hostapd-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.wifi.hostapd-V2-ndk.so \
@@ -1697,7 +1688,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbase.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libbinderdebug.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbinderdebug.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbinder.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/libbluetooth_audio_session_aidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_aidl.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libbluetooth_audio_session.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libcap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcap.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libchrome.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchrome.so \
@@ -1893,12 +1883,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.tetheroffload.control@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.tetheroffload.control@1.1.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.thermal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.thermal@1.0.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.thermal@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.thermal@2.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.usb@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.usb@1.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.usb@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.usb@1.1.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.usb@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.usb@1.2.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.usb@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.usb@1.3.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.usb.gadget@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.usb.gadget@1.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.usb.gadget@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.usb.gadget@1.1.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/android.hidl.allocator@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hidl.allocator@1.0.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/android.hidl.memory@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hidl.memory@1.0.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/android.hidl.memory.block@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hidl.memory.block@1.0.so \
@@ -1923,7 +1907,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libaudioutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioutils.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libavservices_minijail.so:$(TARGET_COPY_OUT_VENDOR)/lib/libavservices_minijail.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbinder.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libbluetooth_audio_session_aidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_aidl.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libbluetooth_audio_session.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libcap.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcap.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libchrome.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchrome.so \
