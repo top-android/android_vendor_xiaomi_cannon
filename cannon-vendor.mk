@@ -1532,11 +1532,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/bin/hw/android.hardware.graphics.composer@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.composer@2.1-service \
     vendor/xiaomi/cannon/proprietary/vendor/bin/hw/android.hardware.health@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.health@2.1-service \
     vendor/xiaomi/cannon/proprietary/vendor/bin/hw/android.hardware.ir@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.ir@1.0-service \
-    vendor/xiaomi/cannon/proprietary/vendor/bin/hw/android.hardware.light-service.cannon:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.light-service.cannon \
     vendor/xiaomi/cannon/proprietary/vendor/bin/hw/android.hardware.media.omx@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.omx@1.0-service \
     vendor/xiaomi/cannon/proprietary/vendor/bin/hw/android.hardware.memtrack-service.mediatek-mali:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.memtrack-service.mediatek-mali \
     vendor/xiaomi/cannon/proprietary/vendor/bin/hw/android.hardware.nfc@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nfc@1.2-service \
-    vendor/xiaomi/cannon/proprietary/vendor/bin/hw/android.hardware.sensors@2.1-service.cannon-multihal:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors@2.1-service.cannon-multihal \
     vendor/xiaomi/cannon/proprietary/vendor/bin/logwrapper:$(TARGET_COPY_OUT_VENDOR)/bin/logwrapper \
     vendor/xiaomi/cannon/proprietary/vendor/bin/sh:$(TARGET_COPY_OUT_VENDOR)/bin/sh \
     vendor/xiaomi/cannon/proprietary/vendor/bin/toolbox:$(TARGET_COPY_OUT_VENDOR)/bin/toolbox \
@@ -2025,3 +2023,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     audio.bluetooth.default
 
+# ===== [src-over-blob] 以下原厂 blob 与 soong 源码模块同路径，已剔除 =====
+#   vendor/xiaomi/cannon/proprietary/vendor/bin/hw/android.hardware.light-service.cannon:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.light-service.cannon
+#   vendor/xiaomi/cannon/proprietary/vendor/bin/hw/android.hardware.sensors@2.1-service.cannon-multihal:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors@2.1-service.cannon-multihal
+# ===== [src-over-blob] end =====
