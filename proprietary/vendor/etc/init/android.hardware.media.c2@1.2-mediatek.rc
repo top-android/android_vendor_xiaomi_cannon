@@ -4,4 +4,8 @@ service android-hardware-media-c2-hal-1-2 /vendor/bin/hw/android.hardware.media.
     group camera drmrpc mediadrm media_rw sdcard_rw media system audio inet net_bt net_bt_admin net_bw_acct sdcard_r
     ioprio rt 4
     writepid /dev/cpuset/foreground/tasks
+    # cannon: this 32-bit HAL needs the pre-A17 GraphicBufferMapper::lock
+    # (6 args). A17's linker dropped TARGET_LD_SHIM_LIBS, so preload the shim
+    # instead; it only forwards lock/unlock to the current libui.
+    setenv LD_PRELOAD /vendor/lib/libshim_gbm_only.so
 
