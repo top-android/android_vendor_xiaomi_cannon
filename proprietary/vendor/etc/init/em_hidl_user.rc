@@ -11,3 +11,9 @@ service emhidl_user /vendor/bin/em_hidl
     disabled
     user system
     group bluetooth radio gps system nfc
+
+# cannon: 本服务是 disabled，全树原本没有任何 trigger 显式 start 它，
+# 导致 vendor.mediatek.hardware.engineermode@1.x::IEmd 永不注册；
+# 走 EmUtils.getEmHidlService() 的 EM 菜单会在 onCreate 阻塞 5 s 后 ANR。
+on property:sys.boot_completed=1
+    start emhidl_user
