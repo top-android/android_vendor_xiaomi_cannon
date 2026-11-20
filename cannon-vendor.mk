@@ -530,9 +530,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libcares_naptr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcares_naptr.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libcarrierconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcarrierconfig.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libccci_util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libccci_util.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libcodec2_hidl@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_hidl@1.1.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libcodec2_hidl@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_hidl@1.2.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libcodec2_hidl_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_hidl_plugin.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libcodec2_mtk_c2store.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_mtk_c2store.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libcodec2_mtk_vdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_mtk_vdec.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libcodec2_mtk_venc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_mtk_venc.so \
@@ -1044,8 +1041,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libccci_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libccci_util.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libcmdl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcmdl.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libcmdl_ndk.mtk.vndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcmdl_ndk.mtk.vndk.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/libcodec2_hidl@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_hidl@1.1.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/libcodec2_hidl@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_hidl@1.2.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libcodec2_mtk_c2store.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_mtk_c2store.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libcodec2_mtk_vdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_mtk_vdec.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libcodec2_mtk_venc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_mtk_venc.so \
@@ -1427,7 +1422,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/hw/android.hardware.audio@7.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio@7.0-impl-mediatek.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/hw/audio.primary.mt6853.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.mt6853.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/hw/audio.r_submix.mt6853.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.r_submix.mt6853.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/libaudioclient_aidl_conversion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioclient_aidl_conversion.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libaudiocompensationfilterc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocompensationfilterc.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libaudiocompensationfilter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocompensationfilter_vendor.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libaudiocomponentenginec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocomponentenginec.so \
@@ -1435,7 +1429,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libaudiocustparam_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocustparam_vendor.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libaudiodcrflt_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiodcrflt_vendor.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libaudiofmtconv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiofmtconv.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/libaudiofoundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiofoundation.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libaudioloudc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioloudc.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libaudio_param_parser-vnd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudio_param_parser-vnd.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libaudioprimarydevicehalifclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioprimarydevicehalifclient.so \
@@ -1475,8 +1468,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/vendor.mediatek.hardware.audio@7.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.audio@7.1.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/hw/android.hardware.audio@6.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio@6.0-impl-mediatek.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/hw/android.hardware.audio@7.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio@7.0-impl-mediatek.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libaudioclient_aidl_conversion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioclient_aidl_conversion.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libaudiofoundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiofoundation.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libcheckpid.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcheckpid.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libdynamiclog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdynamiclog.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libhfmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhfmanager.so \
@@ -1500,156 +1491,24 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/bin/hw/android.hardware.memtrack-service.mediatek-mali:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.memtrack-service.mediatek-mali \
     vendor/xiaomi/cannon/proprietary/vendor/bin/hw/android.hardware.nfc@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nfc@1.2-service \
     vendor/xiaomi/cannon/proprietary/vendor/bin/toolbox:$(TARGET_COPY_OUT_VENDOR)/bin/toolbox \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.audio.common@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.common@2.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.audio.common@5.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.common@5.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.audio.common@7.0-enums.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.common@7.0-enums.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.audio.common@7.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.common@7.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.audio.common-util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.common-util.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.bluetooth.audio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.bluetooth.audio@2.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.bluetooth.audio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.bluetooth.audio@2.1.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.bluetooth.audio-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.bluetooth.audio-impl.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.drm-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.drm-V1-ndk.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.gnss-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.gnss-V1-ndk_platform.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.gnss-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.gnss-V1-ndk.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.ir@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.ir@1.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.nfc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.nfc@1.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.nfc@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.nfc@1.1.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.nfc@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.nfc@1.2.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.secure_element@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.secure_element@1.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.soundtrigger@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.soundtrigger@2.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.soundtrigger@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.soundtrigger@2.1.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.soundtrigger@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.soundtrigger@2.2.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.soundtrigger@2.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.soundtrigger@2.3.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.vibrator@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.vibrator@1.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.wifi.hostapd-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.wifi.hostapd-V2-ndk.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.wifi.supplicant-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.wifi.supplicant-V3-ndk.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/android.hardware.wifi-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.wifi-V2-ndk.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/ese_spi_nxp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ese_spi_nxp.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/hw/android.hardware.ir@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.ir@1.0-impl.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/hw/android.hardware.vibrator@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.vibrator@1.0-impl.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/libalsautils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalsautils.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/libaudioutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioutils.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/libbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbase.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/libbluetooth_audio_session.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/libcppcose_rkp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcppcose_rkp.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libc++.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/libeffectsconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeffectsconfig.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/libeffects.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeffects.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/libflatbuffers-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libflatbuffers-cpp.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/libgralloctypes.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgralloctypes.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/libhidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidlbase.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/libkeystore-engine-wifi-hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeystore-engine-wifi-hidl.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/libmedia_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmedia_helper.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/libnbaio_mono.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnbaio_mono.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/libpcap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpcap.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/libprocessgroup.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprocessgroup.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/libpuresoftkeymasterdevice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpuresoftkeymasterdevice.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/libstagefright_aidl_bufferpool2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_aidl_bufferpool2.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/libstagefright_bufferpool@2.0.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_bufferpool@2.0.1.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/libtinyalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyalsa.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinycompress.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/libtinyxml2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/libui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libui.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/nfc_nci_nxp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nfc_nci_nxp.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/vendor.nxp.nxpese@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.nxpese@1.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/vendor.nxp.nxpnfc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.nxpnfc@1.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.frameworks.sensorservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.frameworks.sensorservice@1.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.frameworks.sensorservice-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.frameworks.sensorservice-V1-ndk.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.audio@7.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio@7.0.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.audio@7.0-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio@7.0-util.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.audio.common@7.0-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.common@7.0-util.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.bluetooth@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.bluetooth@1.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.bluetooth@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.bluetooth@1.1.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.camera.common@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.common@1.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.device@1.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.camera.device@3.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.device@3.2.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.camera.device@3.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.device@3.3.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.camera.device@3.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.device@3.4.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.camera.device@3.5.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.device@3.5.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.camera.device@3.6.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.device@3.6.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.camera.provider@2.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.provider@2.4.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.camera.provider@2.5.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.provider@2.5.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.camera.provider@2.6.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.provider@2.6.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.drm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.drm@1.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.drm@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.drm@1.1.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.drm@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.drm@1.2.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.drm@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.drm@1.3.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.drm@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.drm@1.4.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.gnss@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.gnss@1.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.gnss@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.gnss@1.1.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.gnss@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.gnss@2.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.gnss@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.gnss@2.1.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.gnss.measurement_corrections@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.gnss.measurement_corrections@1.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.gnss.measurement_corrections@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.gnss.measurement_corrections@1.1.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.gnss-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.gnss-V1-ndk_platform.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.gnss-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.gnss-V1-ndk.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.gnss.visibility_control@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.gnss.visibility_control@1.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.keymaster@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.keymaster@3.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.keymaster@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.keymaster@4.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.keymaster@4.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.keymaster@4.1.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.media.bufferpool2-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.media.bufferpool2-V2-ndk.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.media.c2-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.media.c2-V1-ndk.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.neuralnetworks@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.neuralnetworks@1.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.neuralnetworks@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.neuralnetworks@1.1.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.neuralnetworks@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.neuralnetworks@1.2.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.neuralnetworks@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.neuralnetworks@1.3.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.nfc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.nfc@1.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.nfc@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.nfc@1.1.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.nfc@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.nfc@1.2.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.power@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.power@1.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.power@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.power@1.1.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.power@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.power@1.2.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.radio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.radio@1.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.radio@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.radio@1.1.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.radio@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.radio@1.2.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.radio@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.radio@1.3.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.radio@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.radio@1.4.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.radio@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.radio@1.5.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.radio@1.6.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.radio@1.6.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.radio.config@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.radio.config@1.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.radio.config@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.radio.config@1.1.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.radio.config@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.radio.config@1.2.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.radio.config@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.radio.config@1.3.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.secure_element@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.secure_element@1.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.security.keymint-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.security.keymint-V1-ndk.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.security.secureclock-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.security.secureclock-V1-ndk.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.sensors@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.sensors@1.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.sensors@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.sensors@2.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.thermal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.thermal@1.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.hardware.thermal@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.thermal@2.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/android.system.keystore2-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.system.keystore2-V1-ndk.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/hw/android.hardware.audio@7.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio@7.0-impl.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbase.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libaudioutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioutils.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbinder.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libbluetooth_audio_session.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libcppcose_rkp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcppcose_rkp.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcrypto.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libc++.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc++.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libflatbuffers-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libflatbuffers-cpp.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libhidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhidlbase.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libkeymaster41.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymaster41.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libkeymaster4_1support.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymaster4_1support.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libkeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymaster4.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libkeymaster_messages.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymaster_messages.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libkeymaster_portable.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymaster_portable.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libmedia_omx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmedia_omx.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libpcap.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpcap.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libprotobuf-cpp-lite-21.12.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-lite-21.12.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libpuresoftkeymasterdevice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpuresoftkeymasterdevice.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/librilutils.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorndkbridge.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libshim_sensors.so:$(TARGET_COPY_OUT_VENDOR)/lib/libshim_sensors.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libsoft_attestation_cert.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsoft_attestation_cert.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libstagefright_aidl_bufferpool2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_aidl_bufferpool2.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libstagefright_bufferpool@2.0.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_bufferpool@2.0.1.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libstagefright_omx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_omx.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libstagefright_omx_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_omx_utils.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libstagefright_xmlparser.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_xmlparser.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libtextclassifier_hash.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtextclassifier_hash.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libui.so:$(TARGET_COPY_OUT_VENDOR)/lib/libui.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/vendor.xiaomi.hardware.displayfeature@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.displayfeature@1.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/vendor.xiaomi.hardware.mlipay@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.mlipay@1.0.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/vendor.xiaomi.hardware.mlipay@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.mlipay@1.1.so
 
 
