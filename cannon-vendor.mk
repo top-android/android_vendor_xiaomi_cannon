@@ -1519,8 +1519,25 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek.rc \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libcodec2_hidl@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_hidl@1.0.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libcodec2_hidl@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_hidl@1.0.so
+    vendor/xiaomi/cannon/proprietary/vendor/lib/libcodec2_hidl@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_hidl@1.0.so \
+    vendor/xiaomi/cannon/proprietary/vendor/lib64/libcodec2_hidl@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_hidl@1.1.so \
+    vendor/xiaomi/cannon/proprietary/vendor/lib/libcodec2_hidl@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_hidl@1.1.so \
+    vendor/xiaomi/cannon/proprietary/vendor/lib64/libcodec2_hidl@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_hidl@1.2.so \
+    vendor/xiaomi/cannon/proprietary/vendor/lib/libcodec2_hidl@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_hidl@1.2.so
 
+
+
+# ==== 2026-11-21 全量覆盖实测回退：这几个源码版会破坏未替换的 blob ====
+#  libtinyxml2        : pq@2.2-service threadLoop 空指针（读 0x96）
+#  libprocessgroup    : libutils-v32 缺 C 符号 SetTaskProfiles（新版只剩 C++ 重载）
+#  libpcap            : libpkm 缺 pcap_findalldevs_interfaces
+# 所以它们继续用原厂 blob，不进 cannon_vendor_src_deps_* 桩。
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/cannon/proprietary/vendor/lib64/libtinyxml2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2.so \
+    vendor/xiaomi/cannon/proprietary/vendor/lib/libtinyxml2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2.so \
+    vendor/xiaomi/cannon/proprietary/vendor/lib64/libprocessgroup.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprocessgroup.so \
+    vendor/xiaomi/cannon/proprietary/vendor/lib64/libpcap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpcap.so \
+    vendor/xiaomi/cannon/proprietary/vendor/lib/libpcap.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpcap.so
 
 
 # ==== 音频 HAL 修复 (2026-10-27): 换回原厂 MTK 小桩 ====
