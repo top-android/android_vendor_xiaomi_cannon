@@ -197,6 +197,7 @@ prebuilt_etc_xml {
 
 prebuilt_etc_xml {
 	name: "android.hardware.wifi.hostapd",
+	installable: false,
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml",
 	filename_from_src: true,
@@ -206,6 +207,7 @@ prebuilt_etc_xml {
 
 prebuilt_etc_xml {
 	name: "android.hardware.wifi.supplicant",
+	installable: false,
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.xml",
 	filename_from_src: true,
