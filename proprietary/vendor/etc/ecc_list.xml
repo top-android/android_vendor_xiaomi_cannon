@@ -468,4 +468,33 @@
     <EccEntry Ecc="150" Category="0" Condition="2" Plmn="604 FFF"/>
     <EccEntry Ecc="190" Category="0" Condition="2" Plmn="604 FFF"/>
     <!-- RH-43491-bujian-001 add for morocco operator 20220505 end -->
+    <!-- RH-74866-bujian-001 add for Nigeria operator 20221026 begin -->
+    <!--add for Nigeria-->
+    <EccEntry Ecc="122" Category="0" Condition="1" Plmn="621 20"/>
+    <EccEntry Ecc="767" Category="0" Condition="1" Plmn="621 20"/>
+    <EccEntry Ecc="122" Category="0" Condition="1" Plmn="621 30"/>
+    <EccEntry Ecc="767" Category="0" Condition="1" Plmn="621 30"/>
+    <EccEntry Ecc="122" Category="0" Condition="2" Plmn="621 50"/>
+    <EccEntry Ecc="767" Category="0" Condition="2" Plmn="621 50"/>
+    <EccEntry Ecc="122" Category="0" Condition="2" Plmn="621 60"/>
+    <EccEntry Ecc="767" Category="0" Condition="2" Plmn="621 60"/>
+    <!-- RH-74866-bujian-001 add for Nigeria operator 20221026 end -->
+    <!-- RH-75205-bujian-001 modified for Panama operator 20221122 begin-->
+    <EccEntry Ecc="103" Category="0" Condition="1" Plmn="714 FFF"/>
+    <EccEntry Ecc="104" Category="0" Condition="1" Plmn="714 FFF"/>
+    <EccEntry Ecc="105" Category="0" Condition="1" Plmn="714 FFF"/>
+    <EccEntry Ecc="106" Category="0" Condition="1" Plmn="714 FFF"/>
+    <EccEntry Ecc="107" Category="0" Condition="1" Plmn="714 FFF"/>
+    <EccEntry Ecc="108" Category="0" Condition="1" Plmn="714 FFF"/>
+    <EccEntry Ecc="109" Category="0" Condition="1" Plmn="714 FFF"/>
+    <EccEntry Ecc="133" Category="0" Condition="1" Plmn="714 FFF"/>
+    <EccEntry Ecc="141" Category="0" Condition="1" Plmn="714 FFF"/>
+    <EccEntry Ecc="155" Category="0" Condition="1" Plmn="714 FFF"/>
+    <EccEntry Ecc="311" Category="0" Condition="1" Plmn="714 FFF"/>
+    <!-- RH-75205-bujian-001 modified for Panama operator 20221122 end-->
+
+    <!-- add for Peru operator (jiar:RH-78544)-->
+    <EccEntry Ecc="105" Category="0" Condition="1" Plmn="716 06"/>
+    <EccEntry Ecc="105" Category="0" Condition="1" Plmn="716 10"/>
+
 </EccTable>
